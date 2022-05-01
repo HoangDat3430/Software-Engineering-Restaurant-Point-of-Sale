@@ -97,7 +97,7 @@ P03 The server must be able to support a maximum of 300 orders one in a day.<br>
 
 #### Use-case diagram for the whole system
 
-<img src="materials/RES_POS_2.0.png" width=auto>
+<img src="materials/RES_POS_2.0.png" 
 
 ### Task 1.3  Use-case diagram and describe
 | **Name:**               |   Make Payment                                                                                                                        | 
@@ -112,17 +112,17 @@ P03 The server must be able to support a maximum of 300 orders one in a day.<br>
 ## Task 2
 ### Task 2.1 Activity Diagram
 
-<img src="materials/ACTIVITY_DIAGRAM.png" width=1024px>
+<img src="materials/ACTIVITY_DIAGRAM.png"
 
 ### Task 2.2 Sequence diagram
 
-<img src="materials/SEQUENCE_DIAGRAM.png" width=auto>
+<img src="materials/SEQUENCE_DIAGRAM.png" 
 
 
 
 ### Task 2.3 Class diagram
 
-<img src="materials/CLASS_DIAGRAM.png" width=auto>
+<img src="materials/CLASS_DIAGRAM.png" 
 
 
 ## Task 3
@@ -160,7 +160,7 @@ Only the IP from the compute server will be accepted for inbound and outgoing tr
 
 
 ### Task 3.2 An implementation diagram
-<img src="materials/IMPLEMENTATION_DIAGRAM.png" width=auto>
+<img src="materials/IMPLEMENTATION_DIAGRAM.png"
 
 ## Task 4
 
