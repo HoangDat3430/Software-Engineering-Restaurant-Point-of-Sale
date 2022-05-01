@@ -24,7 +24,7 @@ chefs are able to deliver dishes with minimum interacts with the customer in the
 - Manager
 
 #### Expected Jobs
-– The system should allow non-direct contact between Clerks and Customers.
+– The system should allow non-direct contact between Clerks and Customers.<br>
 – The system should be implemented using Web technology and QR code, so customers will not have to install apps.
 – The system should be usable from a mobile device, a tablet device or a normal computer/laptop.
 – The system should be extendable to use in multiple restaurants in the future.
