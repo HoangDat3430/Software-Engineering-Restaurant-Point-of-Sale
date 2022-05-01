@@ -453,3 +453,19 @@
             costitem();
             enableCheckoutbutton();
         }
+        function deleteitem(orderid, button) {
+            const indexnum = orderidarray.indexOf(orderid-1);
+            console.log(orderid);
+            orderidarray.splice(indexnum, 1);
+            orderitemarray.splice(indexnum, 1);
+            orderpricearray.splice(indexnum, 1);
+            orderimgarray.splice(indexnum, 1);
+            arrquantity.splice(indexnum, 1);
+            orderlist.removeChild(button.parentElement);
+            totalitems();
+            costitem();
+            if (orderpricearray.length === 0) {
+                document.getElementById('amount').value = 0;
+                enableCheckoutbutton();
+            }
+        };
