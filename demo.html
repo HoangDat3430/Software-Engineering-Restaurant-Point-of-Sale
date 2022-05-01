@@ -173,7 +173,7 @@
             return `
             <div class="col">
                                 <div class="card h-100" style="width:200px;height:200px;">
-                                    <img src="/media/${items.image}" class="card-img-top" alt="..." style="width:200px;height:200px;">
+                                    <img src="./media/${items.image}" class="card-img-top" alt="..." style="width:200px;height:200px;">
                                     <div class="card-body flex-row">
                                         <h5 class="card-title"><b>${items.name}</b></h5>
                                         <p class="card-text">
@@ -195,13 +195,13 @@
          handleData();
 
             const  handleDataDrink = async ()=>{
-            const response = await fetch('http://127.0.0.1:8000/drink/');
+            const response = await fetch('https://626a3d5f737b438c1c444612.mockapi.io/drinks');
             const myJson = await response.json();
             const html = myJson.map((items) =>{
             return `
             <div class="col">
                                 <div class="card h-100" style="width:200px;height:200px;">
-                                    <img src="/media/${items.image}" class="card-img-top" alt="..." style="width:200px;height:200px;">
+                                    <img src="./media/${items.image}" class="card-img-top" alt="..." style="width:200px;height:200px;">
                                     <div class="card-body flex-row">
                                         <h5 class="card-title"><b>${items.name}</b></h5>
                                         <p class="card-text">
@@ -223,7 +223,7 @@
             };
         handleDataDrink();
         const  handleDataHamburger = async ()=>{
-            const response = await fetch('http://127.0.0.1:8000/hamburger/');
+            const response = await fetch('https://626a3d5f737b438c1c444612.mockapi.io/hamburger');
             const myJson = await response.json();
             const html = myJson.map((items) =>{
             return `
