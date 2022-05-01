@@ -97,7 +97,7 @@ P03 The server must be able to support a maximum of 300 orders one in a day.<br>
 
 #### Use-case diagram for the whole system
 
-<img src="materials/RES_POS_2.0.png">
+![](https://www.linkpicture.com/q/3_1284.png)
 
 ### Task 1.3  Use-case diagram and describe
 | **Name:**               |   Make Payment                                                                                                                        | 
@@ -107,22 +107,22 @@ P03 The server must be able to support a maximum of 300 orders one in a day.<br>
 | **Normal Flow:**        |   1. Customers access the payment page. <br> 2. Customers view the detailed orders before payment. <br> 3. Customers choose the way for payment (payment methods: Internet Banking, Visa Card and Cash) that are available in the system.<br> 4. Customers show payment for clerks to check.              |
 | **Alternative flow:**   |   By Cash <br>  3a. Notify clerk to go to the table of customer <br> Go to step 4 <br> 5a. Clerk confirms the successful transaction <br>    By Visa Card <br> 3a. Notify clerk to go to the table of customer <br> 3b. Swiping cards <br> Go to step 4 <br> By Internet Banking <br> 3a. Customers choose the Internet Banking method to pay <br> 3b. Customers fill banking account information and submit <br> 3c. Customers receive and submit OTP codes. <br> Go to step 4. |
 | **Exception flow:**     |    Incorrect banking account information <br> Transaction fail <br> 3b. Ask customers to resubmit or choose other payment methods <br>      4a. Customers retry payment <br> Go to step 3                                                                                                                     |
-
+![](https://www.linkpicture.com/q/4_921.png)
 
 ## Task 2
 ### Task 2.1 Activity Diagram
 
-<img src="materials/ACTIVITY_DIAGRAM.png">
+![](https://www.linkpicture.com/q/5_726.png)
 
 ### Task 2.2 Sequence diagram
 
-<img src="materials/Sequential.drawio.png">
+![](https://www.linkpicture.com/q/6_974.jpg)
 
 
 
 ### Task 2.3 Class diagram
 
-<img src="materials/CLASS_DIAGRAM.png"> 
+![](https://www.linkpicture.com/q/7_340.png)
 
 
 ## Task 3 Architecture design  
@@ -153,11 +153,11 @@ SQS are put in or taken out.<br>
   – This strategy places the partition key on the Domain Name. Our entire system is capable of supporting a big number of restaurants while maintaining excellent availability.<br>
 Only the IP from the compute server will be accepted for inbound and outgoing traffic<br>
 
-<img src="materials/MODEL.png">
+[![](https://www.linkpicture.com/q/1_7.png)](https://www.linkpicture.com/view.php?img=LPic626e54cb03ccc1042050397)
 
 
 ### Task 3.2 An implementation diagram
-<img src="materials/IMPLEMENTATION_DIAGRAM.png">
+![](https://www.linkpicture.com/q/2_5.png)
 
 ## Task 4
 
