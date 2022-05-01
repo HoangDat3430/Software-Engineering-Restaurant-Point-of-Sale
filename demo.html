@@ -139,3 +139,113 @@
 
         </div>
     </div>
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="detailfood" tabindex="-1" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-light text-dark">
+            <h5 class="modal-title" id="exampleModalLabel">ADD TO CART</h5>
+            <button type="button" class="btn-close" style ="background-color: bisque;" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class = "container" id="clickCard"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        const arrquantity = [];
+        const orderidarray = [];
+        const orderpricearray = [];
+        const orderitemarray = [];
+        const orderarray = [];
+        const orderimgarray = [];
+        const orderitemidarray = [];
+        let id = 0;
+        const  handleData = async ()=>{
+            const response = await fetch('https://626a3d5f737b438c1c444612.mockapi.io/Pizza');
+            const myJson = await response.json();
+
+            const html = myJson.map((items) =>{
+
+            return `
+            <div class="col">
+                                <div class="card h-100" style="width:200px;height:200px;">
+                                    <img src="/media/${items.image}" class="card-img-top" alt="..." style="width:200px;height:200px;">
+                                    <div class="card-body flex-row">
+                                        <h5 class="card-title"><b>${items.name}</b></h5>
+                                        <p class="card-text">
+                                            <h5 class="d-flex justify-content-between align-items-center">
+                                                <span> <p class="card-text"><b><font color="red">$${items.price}</font></b></p></span>
+                                                <button type="button"  onclick="userAction('${items.image}',${items.id},'${items.name}','${items.price}',${items.protein},${items.addictives},${items.baking},${items.deco}, 'Pizza')" class="btn btn-primary rounded pid" style = "background-color: blue; text-align: left;" data-bs-toggle="modal" data-bs-target="#detailfood">
+                                                    <img src = "./media/cart.png" style="width:20px;height:20px">
+                                                </button>
+                                            </h5>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+            `;
+                        }).join(" ");
+            let a = document.querySelector("#Pizzatab");
+            a.innerHTML = html;          
+        };
+         handleData();
+
+            const  handleDataDrink = async ()=>{
+            const response = await fetch('http://127.0.0.1:8000/drink/');
+            const myJson = await response.json();
+            const html = myJson.map((items) =>{
+            return `
+            <div class="col">
+                                <div class="card h-100" style="width:200px;height:200px;">
+                                    <img src="/media/${items.image}" class="card-img-top" alt="..." style="width:200px;height:200px;">
+                                    <div class="card-body flex-row">
+                                        <h5 class="card-title"><b>${items.name}</b></h5>
+                                        <p class="card-text">
+                                            <h5 class="d-flex justify-content-between align-items-center">
+                                                <span> <p class="card-text"><b><font color="red">$${items.price}</font></b></p></span>
+                                                <button type="button"  onclick="userAction('${items.image}',${items.id},'${items.name}','${items.price}',${items.protein},${items.addictives},${items.baking},${items.deco}, 'Drink')" class="btn btn-primary rounded pid" style = "background-color: blue; text-align: left;" data-bs-toggle="modal" data-bs-target="#detailfood">
+                                                    <img src = "./media/cart.png" style="width:20px;height:20px">
+                                                </button>
+                                            </h5>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+            `;
+                        }).join(" ");
+            let a = document.querySelector("#Drinktab");
+            a.innerHTML = html;
+                
+            };
+        handleDataDrink();
+        const  handleDataHamburger = async ()=>{
+            const response = await fetch('http://127.0.0.1:8000/hamburger/');
+            const myJson = await response.json();
+            const html = myJson.map((items) =>{
+            return `
+            <div class="col">
+                                <div class="card h-100" style="width:200px;height:200px;">
+                                    <img src="./media/${items.image}" class="card-img-top" alt="..." style="width:200px;height:200px;">
+                                    <div class="card-body flex-row">
+                                        <h5 class="card-title"><b>${items.name}</b></h5>
+                                        <p class="card-text">
+                                            <h5 class="d-flex justify-content-between align-items-center">
+                                                <span> <p class="card-text"><b><font color="red">$${items.price}</font></b></p></span>
+                                                <button type="button"  onclick="userAction('${items.image}',${items.id},'${items.name}','${items.price}',${items.protein},${items.addictives},${items.baking},${items.deco}, 'Hamburger')" class="btn btn-primary rounded pid" style = "background-color: blue; text-align: left;" data-bs-toggle="modal" data-bs-target="#detailfood">
+                                                    <img src = "./media/cart.png" style="width:20px;height:20px">
+                                                </button>
+                                            </h5>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+            `;
+                        }).join(" ");
+            let a = document.querySelector("#Hamburgertab");
+            a.innerHTML = html;
+                
+ };
