@@ -249,3 +249,75 @@
             a.innerHTML = html;
                 
  };
+                handleDataHamburger();
+        const userAction = async (ImageLink,id,Name,Price,Protein,Addictives,BakingMaterial,FoodDeco, catagory) => {
+            document.getElementById('clickCard').innerHTML=
+            `<div class = "row">
+                        <div class = "col-4">
+                            <!--test form-->
+                            <img src="./media/`+ImageLink+`" class="img-thumbnail" alt="...">
+                        </div>
+                        <div class = "col-8">
+                            <div>
+                                <div class="d-flex bd-highlight mb-3">
+                                    <div class="p-2 bd-highlight fs-5">SKU</div>
+                                    <div class="p-2 bd-highlight fs-5">`+catagory+`<!--put id tag in here--></div>
+                                    <div class="ms-auto p-2 bd-highlight fs-5">Unit Price</div>
+                                </div>
+                                <div class="d-flex bd-highlight mb-3">
+                                    <div class="p-2 bd-highlight fs-6">`+id+`<!--put id card in here--></div>
+                                    <div class="p-2 bd-highlight fs-6">`+Name+`<!--put id.name tag in here--></div>
+                                    <div class="ms-auto p-2 bd-highlight fs-6">$`+Price+`<!--put id.price tag in here--></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <p class="card-text">
+                                <h5 class="d-flex justify-content-between align-items-center">
+                                    <span> <p class="card-text"><b>Quantity</b></p></span>
+                                    <div class="number">
+                                        <button class = "rounded-pill" style="margin-left: 36px; margin-bottom: 5px; margin-right: 10px;" onclick="decrease(this)">-</button>
+                                        <span class="value">1</span>
+                                        <button class = "rounded-pill" onclick="increase(this)" style="margin-left: 10px;">+</button>
+                                    </div>
+                                </h5>
+                            </p>
+                            <hr>
+                            <p class="fw-bold">Protein: `+Protein+`</p>
+                            <p class="fw-bold">Additives: `+Addictives+`</p>
+                            <p class="fw-bold">Baking material: `+BakingMaterial+`</p>
+                            <p class="fw-bold">Food decoration: `+FoodDeco+`</p>
+                            <p class="fs-4 fw-bold ">Size</p>
+                            <p class="fs-6 fst-italic fw-lighter">Please select one of the size below</p>
+                            <div class="form-check">
+                                <input class="form-check-input" style="background-color: blue;" type="checkbox" value="" id="flexCheckDefaultS">
+                                <label class="form-check-label" for="flexCheckDefaultS">
+                                    Size S (6 inch)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" style="background-color: blue;" type="checkbox" value="" id="flexCheckDefaultM">
+                                <label class="form-check-label" for="flexCheckDefaultM">
+                                    Size M (9 inch)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" style="background-color: blue;" type="checkbox" value="" id="flexCheckDefaultL">
+                                <label class="form-check-label" for="flexCheckDefaultL">
+                                    Size L (12 inch)
+                                </label>
+                            </div> 
+                            <hr>
+                            <p class="fs-4 fw-bold ">Side dishes(<font color="red">*</font>)</p>
+                            <p class="fs-6 fst-italic fw-lighter">Please select on of the properties below</p>
+                            <div class="form-check">
+                                <input class="form-check-input" style="background-color: blue;" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Vegetables
+                                </label>
+                              </div>
+                            <hr>
+                            <button  class="btn btn-lg w-100 rounded-pill" id="addinorder" data-bs-dismiss="modal" style="background-color:#0d6efd; color: white;" onclick="order('`+Name+`', `+Price+`, './media/`+ImageLink+`',this.parentNode.childNodes[6].childNodes[3].childNodes[3]);">ADD into cart</button>
+                        </div>
+                    </div>`;
+            
+        }
