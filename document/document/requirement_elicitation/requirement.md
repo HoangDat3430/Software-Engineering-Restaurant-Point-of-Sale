@@ -41,6 +41,7 @@ CHEF:
 
 ### Non-functional Requirements:
 This part presents the identified non-functional requirements for Restaurant POS 2.0. The subcategories of non-functional requirements given are safety, security and performance
+
 SAFETY:
 - When problems occrur ( such as system crash or power failure), the system must restore the previous condition.
 - When tablets fail to send messages or when assigned clerks are disconnected from the tablet, the system will flag them.
