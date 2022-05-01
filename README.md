@@ -107,6 +107,7 @@ P03 The server must be able to support a maximum of 300 orders one in a day.<br>
 | **Normal Flow:**        |   1. Customers access the payment page. <br> 2. Customers view the detailed orders before payment. <br> 3. Customers choose the way for payment (payment methods: Internet Banking, Visa Card and Cash) that are available in the system.<br> 4. Customers show payment for clerks to check.              |
 | **Alternative flow:**   |   By Cash <br>  3a. Notify clerk to go to the table of customer <br> Go to step 4 <br> 5a. Clerk confirms the successful transaction <br>    By Visa Card <br> 3a. Notify clerk to go to the table of customer <br> 3b. Swiping cards <br> Go to step 4 <br> By Internet Banking <br> 3a. Customers choose the Internet Banking method to pay <br> 3b. Customers fill banking account information and submit <br> 3c. Customers receive and submit OTP codes. <br> Go to step 4. |
 | **Exception flow:**     |    Incorrect banking account information <br> Transaction fail <br> 3b. Ask customers to resubmit or choose other payment methods <br>      4a. Customers retry payment <br> Go to step 3                                                                                                                     |
+
 ![](https://www.linkpicture.com/q/4_921.png)
 
 ## Task 2
