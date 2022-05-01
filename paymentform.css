@@ -1,0 +1,362 @@
+.header {
+    height: 7vh;
+    background-image: linear-gradient(0, #FFFAFA, #FFFFFF);
+}
+
+.container {
+    background-image: linear-gradient(0, #E8E8E8, #E8E8E8);
+    width: auto;
+    height: 93vh;
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+}
+
+.header__navbar-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.header__navbar-item {
+    display: inline-block;
+    line-height: 7vh;
+}
+
+.grid1 {
+    width: 1200px;
+    max-width: 98%;
+    margin: 0 auto;
+}
+
+.it {
+    width: 420px;
+    margin: 30px auto 20px 414px;
+    border-style: ridge;
+    border-radius: 10px;
+}
+
+.first {
+    background-image: linear-gradient(0, #E8E8E8, #E8E8E8);
+    height: 55px;
+    width: 400px;
+    margin: auto auto auto auto;
+}
+
+.second {
+    background-image: linear-gradient(0, #FFFAFA, #FFFAFA);
+    height: 113px;
+    width: 400px;
+    margin: 0 auto auto auto;
+    border: none;
+    border-radius: 5px;
+}
+
+.third {
+    background-image: linear-gradient(0, #E8E8E8, #E8E8E8);
+    height: 200px;
+    width: 400px;
+    margin: auto auto auto auto;
+    border: none;
+}
+
+.fourth {
+    background-image: linear-gradient(0, #FFFAFA, #FFFAFA);
+    height: 50px;
+    width: 400px;
+    margin: auto auto auto auto;
+    padding-top: 10px;
+    padding-left: 270px;
+    border-radius: 10px;
+}
+
+.boxmail {
+    margin: 20px 15px 5px 10px;
+    height: 45px;
+    width: 380px;
+    background-color: #F5F5DC;
+    text-align: center;
+    padding-top: 10px;
+    border: none;
+    color: #F0E68C;
+    font-style: italic;
+    font-weight: bold;
+    font-size: small;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 20px 20px;
+}
+
+.component1 {
+    color: #225486;
+    font-size: large;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.component2 {
+    text-align: right;
+    font-size: large;
+    color: #225486;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.component3 {
+    text-align: left;
+    font-size: small;
+    color: #225486;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.component4 {
+    text-align: right;
+    color: #225486;
+    font-size: small;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.buttonx {
+    color: blue;
+}
+
+.header__navbar2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-list2 {
+    list-style: none;
+    padding-left: 0;
+}
+
+.header__navbar-item2 {
+    display: inline-block;
+    margin: 6px;
+    padding-top: 0;
+}
+
+.inside {
+    margin: 50px 30px 20px 30px;
+    border: 5px 5px;
+    background-color: white;
+    height: auto;
+    padding-left: 20px;
+    color: #225486;
+    border-radius: 10px;
+}
+
+.div_left {
+    width: 162px;
+    float: left;
+    padding-left: 10px;
+    border: none;
+    background-color: white;
+    margin: auto auto auto 30px;
+    height: 50px;
+    color: #225486;
+    border-radius: 10px;
+}
+
+.div_right {
+    width: 162px;
+    float: right;
+    padding-left: 10px;
+    border: none;
+    background-color: white;
+    margin: auto 30px auto auto;
+    height: 50px;
+    color: #225486;
+    border-radius: 10px;
+}
+
+.inside_other {
+    margin: 90px 30px 20px 30px;
+    border: none;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: rgb(11, 238, 11);
+    color: #225486;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.inside_other:hover {
+    background: rgb(2, 253, 2);
+}
+
+.goup {
+    border: none;
+}
+
+.goup1 {
+    width: 140px;
+    border: none;
+}
+
+.j {
+    border: none;
+    background-color: #5C6FA2;
+    color: #225486;
+}
+
+.h {
+    border: none;
+    color: #225486;
+    background-image: linear-gradient(0, #FFFAFA, #FFFAFA);
+    margin-right: 50px;
+    margin-top: 0;
+    transition: .5s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.h:hover {
+    background: whitesmoke;
+    border-radius: 20px;
+}
+
+.goup2 {
+    border: none;
+    width: 100px;
+}
+
+#back {
+    color: black;
+    line-height: 7vh;
+}
+
+#black:hover {
+    text-decoration: none;
+}
+
+#cardname {
+    margin-left: 30px;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+#inputCard {
+    border: none;
+    margin-bottom: 5px;
+}
+
+.app {
+    height: 100%;
+}
+
+html,
+body {
+    margin: 0px;
+    height: 100%;
+}
+
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    display: none;
+}
+
+.modal-content {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    background-image: url(./media_version/dep.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.header__navbar-item1 {
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.line {
+    bottom: 60px;
+    width: 100%;
+    height: 2px;
+    background: black;
+}
+
+.df {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.little {
+    font-weight: bold;
+}
+
+.df2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.df3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.df4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.df5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+.fa-check {
+    font-size: 40px;
+    color: #27ae60;
+    font-weight: bold;
+    height: 80;
+    width: 80;
+    border: 2px solid #27ae60;
+    text-align: center;
+    padding-top: 3px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 5px 0 0 8px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.fa-check:hover {
+    background: #59ffac;
+}

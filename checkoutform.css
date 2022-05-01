@@ -1,0 +1,29 @@
+.modal_container_K {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    position: fixed;  
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.35s;
+ }
+ .modal_K {
+     background-color: #fff;
+     width: 800px;
+     max-width: 100%;
+     padding: 30px 40px;
+     border-radius: 10px;
+ }
+ 
+ .modal_container_K.show {
+     pointer-events: auto;
+     opacity: 1;
+ }
+ 
+ 
