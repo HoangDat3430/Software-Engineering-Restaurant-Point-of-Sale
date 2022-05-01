@@ -45,10 +45,56 @@ The specified functional requirements for the topic POS are presented in this se
 broad needs for the entire system are presented first. Following needs have been delineated
 to the extent feasible based on their relevance to the users of system users, namely clients,
 clerks, cooks, and supervisors
+ GENERAL REQUIREMENTS: 
+G01 The system should allow non-direct contact between Clerks and Customers
+G02 The system should be implemented using Web technology and QR code, so customers will not have to install apps
+G03 The system should be usable from a mobile device, a tablet device or a normal computer/ laptop
+G04 The system should be extendable to use in multiple restaurants in the future
+G05 The current transactions is about 300 orders per day
+CUSTOMER
+C01 The customers shall be able to engage the menu of restaurants by scanning the QR code placed on their tables or logging in with their own accounts.
+C02 Customers will be able to begin placing an order by picking any of the available items.
+C03 Customers will be able to change the quantity of an item after they have selected it.
+C04 Customers will be able to change the quantities, requests, and removal of products while on the menu page
+C05 The customers shall be able to submit their orders.
+C06 The customers shall be able to go back to the menu anytime to continue picking items.
+C07 The customers shall be alerted via the notification of system in case an item is not available
+C08 Customers will be able to request assistance via the web at any time (for special recommendations, cleaning, etc.).
+C09 The customers shall be able to search for the item on the menu page.
+C10 Customers will be able to select payment options (internet banking, credit card, or cash) before placing orders on the confirmation page.
+C11 If the customers choose for the internet banking method, they shall be able to select their bankcard type then confirm their payment.
+C12 The customers shall be able to send feedback on quality of the foods,attitude of staff ,... right on the website after finishing the meals.
+ CLERK:
+K01 The clerks shall be able to log in and log out their own account on their tablets
+K02 If an order is placed, the clerks will be notified via their tablets.
+K03 The clerks shall be alerted if the item ordered from the kitchen is ready.
+K04 The clerks shall be alerted if the item ordered is not available.
+K05 The clerks will be able to use their tablets to record an item that they successfully deliver to the table.
+K06 Clerks who process contact payments (credit cards and cash) will use their tablets to keep track of them.
+ CHEF: 
+H01 The chef shall be able to confirm an order of customer through the display
+H02 If an item is not available through the display, the chef will be able to inform the consumer.
+H03 Through the display, the chef will be able to signal when a order of customer item is ready to be served.
 
 #### Non-functional requirements:
 This part presents the identified non-functional requirements for Restaurant POS 2.0. The
 subcategories of non-functional requirements given are safety, security and performance
+ SAFETY:
+S01 When problems occrur ( such as system crash or power failure), the system must restore the previous condition.
+S02 When tablets fail to send messages or when assigned clerks are disconnected from the tablet, the system will flag them.
+S03 The system must be able to display a menu to take orders at all time.
+S04 To monitor the condition of tablet, the system sends periodic 30-second sustaining signals between the tablet and the
+server.
+ SECURITY:
+E01 At any given time, a clerk will be limited to logging onto only one tablet.
+E02 The WPA2-PSK password for wireless communication must have at least 80 bits of bit strength and be changed at least once a month.
+E03 A clerk password for tablet login must have at least 64 bits of bit strength and be changed every three months.
+E04 When customers scan QR code to access to the website, they do not need to login.
+E05 Any other users must have username and password to log in.
+ PERFORMANCE:
+P01 The server must be able to handle at least an arbitrary number of simultaneous connections.
+P02 The server must be able to process an unlimited number of orders at the same time.
+P03 The server must be able to support a maximum of 300 orders one in a day.
 
 #### Use-case diagram for the whole system
 
