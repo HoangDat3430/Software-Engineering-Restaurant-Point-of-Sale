@@ -378,3 +378,38 @@
             const orderprice = document.createTextNode('$' + itemprice.toFixed(2) + "    Quantity: " + quantity);
             orderitempricespan.className = 'text-danger';
             orderitempricespan.appendChild(orderprice);
+            ////create a delete button
+            const deletebutton = document.createElement('button');
+            const deletebuttontext = document.createTextNode('X');
+
+            ///append the test to delete
+            deletebutton.setAttribute('onclick', 'deleteitem('+id+',this)')
+            deletebutton.appendChild(deletebuttontext);
+            deletebutton.className = 'btn btn-danger rounded-pill';
+
+            const orderitemimgtag = document.createElement('img');
+            ///assign the src itemimage to img
+            orderitemimgtag.src = itemimage;
+
+            orderitemimgtag.className = 'w-25 rounded border border-dark';
+            //create a span
+
+            const orderleftside = document.createElement('span');
+
+            /////add in a side
+            orderleftside.appendChild(orderitemimgtag);
+            orderleftside.appendChild(orderItemname);
+            orderleftside.appendChild(ordersizespan); 
+            orderleftside.appendChild(orderitempricespan);
+            //append child to LI
+            orderitem.appendChild(orderleftside);
+            orderitem.appendChild(deletebutton);
+            ///check
+            orderlist.appendChild(orderitem);
+            console.log(id);
+            ///image section
+            ///add img text
+            totalitems();
+            costitem();
+            enableCheckoutbutton();
+        };
