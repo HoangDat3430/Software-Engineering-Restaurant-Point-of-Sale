@@ -97,7 +97,7 @@ P03 The server must be able to support a maximum of 300 orders one in a day.<br>
 
 #### Use-case diagram for the whole system
 
-<img src="materials/RES_POS_2.0.png" width=410px>
+<img src="materials/RES_POS_2.0.png" width=auto>
 
 ### Task 1.3  Use-case diagram and describe
 | **Name:**               |   Make Payment                                                                                                                        |
