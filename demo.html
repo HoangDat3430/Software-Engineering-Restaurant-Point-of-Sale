@@ -413,3 +413,10 @@
             costitem();
             enableCheckoutbutton();
         };
+        function totalitems() {
+            let ttitem = 0;
+            for(let i = 0; i<arrquantity.length;i++){
+                ttitem += Number(arrquantity[i]);
+            }
+            document.getElementById('totalitem').innerText = ttitem;
+        };
