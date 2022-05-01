@@ -329,3 +329,52 @@
             if (e.parentNode.childNodes[3].innerHTML > 1)
                 e.parentNode.childNodes[3].innerHTML--;
         };
+        function order(itemname, itemprice, itemimage, parent) {
+            quantity = parent.innerHTML;
+            parent.innerHTML = 1;
+            orderidarray.push(id);
+            orderitemarray.push(itemname);
+            orderimgarray.push(itemimage);
+            orderarray.push(itemname, itemprice, itemimage);
+            let orderlist = document.getElementById('orderlist');
+            const orderitem = document.createElement('li');
+            orderitem.className = "d-flex justify-content-between align-items-center";
+            const orderitempricespan = document.createElement('span')
+            const orderItemname = document.createTextNode(' ' + itemname + "   ");
+            const ordersizespan = document.createElement('span')
+            var sizeS = document.getElementById("flexCheckDefaultS").checked;   
+            var sizeM = document.getElementById("flexCheckDefaultM").checked;
+            var sizeL = document.getElementById("flexCheckDefaultL").checked;   
+            let size = ""; 
+            if ((sizeS && sizeM) || (sizeS && sizeL) || (sizeM && sizeL)) {
+                alert("Please just choose one size");
+                return;
+            }
+            else if (sizeS){
+                size = " Size S ";
+            }
+            else if (sizeM){
+                size = " Size M ";
+            }
+            else if (sizeL){
+                size = " Size L ";
+            }
+            else {
+                alert("You have not selected the size");
+                return;
+            }
+            id++; console.log(id);
+            const ordersize = document.createTextNode(size + '-');
+            ordersizespan.className = 'text-danger';
+            ordersizespan.appendChild(ordersize);
+            if (sizeM){
+                itemprice += 2;
+            }
+            else if (sizeL){
+                itemprice += 4;
+            }
+            orderpricearray.push(itemprice);
+            arrquantity.push(quantity);
+            const orderprice = document.createTextNode('$' + itemprice.toFixed(2) + "    Quantity: " + quantity);
+            orderitempricespan.className = 'text-danger';
+            orderitempricespan.appendChild(orderprice);
