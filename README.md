@@ -135,24 +135,22 @@ The team needs to perform the following tasks:<br>
 
 The technology is built to be very scalable and may be used in a wide range of restaurants around the world.<br>
 • The restaurant owns the domain name "storeabc.com," which users use to access the website.<br>
-– For the two primary sorts of users, there are two sub-domains: ”staff. storeabc.com” for employees and ”www. storeabc.com” for customer.
-Assignment 1 for Software Engineering - Academic year 2021 - 2022 Page 12/14 Ho Chi Minh City University of Technology Faculty of Computer Science and Engineering<br>
-– Laptops and mobile phones are examples of user devices. Client devices’ browsers send queries to the URL and AWS Rout 53, a domain name service redirect, and
+  – For the two primary sorts of users, there are two sub-domains: ”staff. storeabc.com” for employees and ”www. storeabc.com” for customer. Assignment 1 for Software Engineering - Academic year 2021 - 2022 Page 12/14 Ho Chi Minh City University of Technology Faculty of Computer Science and Engineering<br>
+  – Laptops and mobile phones are examples of user devices. Client devices’ browsers send queries to the URL and AWS Rout 53, a domain name service redirect, and
 receive responses from AWS CloudFront, a CDN server, which receives and renders resources.<br>
 • Server that hosts the CDN<br>
-– The CDN server will host the resource on AWS S3, which is available in 27 regions. The precise host region will be picked based on the restaurant’s location to maximize resource delivery time.<br>
-– This server’s resources comprise html, javascript, and pictures, which are used to respond to requests from users’ browsers.<br>
-– All incoming requests will be sent to https requests.<br>
-– The response to all outbound requests will be https.<br>
-– When a user interacts with a website in their browser, the browser renders static
-response files from the CDN server and sends REST API queries to API Gateway.<br>
+  – The CDN server will host the resource on AWS S3, which is available in 27 regions. The precise host region will be picked based on the restaurant’s location to maximize resource delivery time.<br>
+  – This server’s resources comprise html, javascript, and pictures, which are used to respond to requests from users’ browsers.<br>
+  – All incoming requests will be sent to https requests.<br>
+  – The response to all outbound requests will be https.<br>
+  – When a user interacts with a website in their browser, the browser renders static response files from the CDN server and sends REST API queries to API Gateway.<br>
 • AWS Lambda running on Nodejs 14.6 is the compute unit.<br>
-– The back-end service is created using a serverless architecture and includes four core services: viewing meals, making payments, placing orders, and confirming meals.<br>
-– These services will make a request to a DynamoDB database cluster to get the data they require, then process it and send the results to the client.<br>
-– The put order service uses AWS SQS (simple queue service) to keep track of orders that are waiting to be processed. Confirm-Meal Service is triggered when items in
+  – The back-end service is created using a serverless architecture and includes four core services: viewing meals, making payments, placing orders, and confirming meals.<br>
+  – These services will make a request to a DynamoDB database cluster to get the data they require, then process it and send the results to the client.<br>
+  – The put order service uses AWS SQS (simple queue service) to keep track of orders that are waiting to be processed. Confirm-Meal Service is triggered when items in
 SQS are put in or taken out.<br>
 • AWS DynamoDB is used to host the database cluster.<br>
-– This strategy places the partition key on the Domain Name. Our entire system is capable of supporting a big number of restaurants while maintaining excellent availability.<br>
+  – This strategy places the partition key on the Domain Name. Our entire system is capable of supporting a big number of restaurants while maintaining excellent availability.<br>
 Only the IP from the compute server will be accepted for inbound and outgoing traffic<br>
 
 <img src="materials/MODEL.png">
