@@ -420,3 +420,21 @@
             }
             document.getElementById('totalitem').innerText = ttitem;
         };
+        function costitem() {
+            if (orderpricearray.length == 0) {
+                console.log(orderpricearray.length);
+                document.getElementById('totalcost').innerText = 0;
+            } else {
+                let totalcost = 0;
+                let totalamount = 0;
+                for(let i = 0; i<arrquantity.length;i++){
+                    totalcost += arrquantity[i] * orderpricearray[i];
+                    totalamount += arrquantity[i];
+                }
+                let tax = 0.0;
+                tax = totalcost * 0.1;
+                totalcost += tax;
+                document.getElementById('totalcost').innerText = totalcost.toFixed(2) + '\n' + "(Incl. tax 10% = " + tax.toFixed(3) + ")";
+                document.getElementById('amount').value = parseFloat(totalcost.toFixed(2));
+            }
+       };
