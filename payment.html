@@ -1,0 +1,192 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/f7ccff0c24.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'paymentform.css' %}">
+    <script src="http://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid1">
+                <nav class="header__navbar">
+                    
+                    
+                    <a href="http://127.0.0.1:8000/"><i class="fas fa-long-arrow-alt-left" id="back"> Back</i> </a>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item1">
+                            <b>PAYMENT</b>
+                        </li>
+
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">Home </li>
+                        <li class="header__navbar-item">
+                            <b>Payment</b>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+                <div class="it">
+                    <div class="first">
+                        <div class="wrapper">
+                            <div class="component1"><b>POS system</b></div>
+                            <div class="component2"><span id="result"></span></div>
+                            <div class="component3">1 item (expand)</div>
+                            <div class="component4">inc. VAT</div>
+                        </div>
+                    </div>
+
+                    <div class="second">
+                        <form >
+                            <input type="submit" class="boxmail" value="" disable=" ">
+                        </form>
+
+                        <div class="grid1">
+                            <nav class="header__navbar2">
+                                <ul class="header__navbar-list2">
+                                    <li class="header__navbar-item2">
+                                        <i class="far fa-circle"style="height: 19px; color:#225486;"></i>
+                                        <font color="#225486"><b> Credit card</b><small> - credit or debt</small></font>
+                                    </li>
+                                </ul>
+                                <ul class="header__navbar-list2">
+                                    <li class="header__navbar-item2"><img src="{% static 'media_version/visa.jpg' %}" alt=" " style="height: 30px; width: 55px;"> </li>
+
+                                </ul>
+
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <div class="inside">
+                            <form >
+                                <label for="fname" id="cardname">Card Number</label><br>
+                            <img src="{% static 'media_version/credit.jpg' %}" alt=" anh" style="height:21px; width: 22px;">
+
+                                <input type="number" id="inputCard" ><br>
+                            </form>
+                        </div>
+                        <div class="div_left">
+                           MM/YY
+                            <br>
+                            <input type="month" class="goup2">
+                        </div>
+                        <div class="div_right">
+                            CVV <br>
+                            <input type="text" class="goup1">
+                        </div>
+                        <div class="inside_other">
+                            <a href="#" id="button" class="button"><b>Pay the order</b></a>
+                        </div>
+                    </div>
+                    <div class="fourth">
+                        <form method="get" action="http://127.0.0.1:8000/">
+                            <input type="submit" class="h" value="Cancel payment">
+                        </form>
+                    </div>
+                              
+                        </div>
+                    </div>
+                    </div>
+                        <!--Modal layout-->
+    <div class="bg-modal">
+        <div class="modal-content">
+            <div class="close">+</div>
+            <h2><b>RECEIPT</b></h2>
+            <div class="line"></div>
+            <h4><b>Customer info</b></h4>
+            <div class="df">
+                <div class="df__item">
+                    <h5><b>First name</b></h5>
+                </div>
+                <div class="df__item">
+                    <span id="fnm" class="little"></span>
+                </div>
+            </div>
+            <div class="df2">
+                <div class="df2__item">
+                    <h5><b>Last name</b></h5>
+                </div>
+                <div class="df2__item">
+                    <span id="lnm" class="little"></span>
+                </div>
+            </div>
+            <div class="df3">
+                <div class="df3__item">
+                    <h5><b>Telephone number</b></h5>
+                </div>
+                <div class="df3__item">
+                    <span id="tphone" class="little"></span>
+                </div>
+            </div>
+            <div class="df4">
+                <div class="df4__item">
+                    <h5><b>Notes</b></h5>
+                </div>
+                <div class="df4__item">
+                    <span id="notefor" class="little"></span>
+                </div>
+            </div>
+            <div class="line"></div>
+            <h4><b>Order info</b></h4>
+            <div class="df5">
+                <div class="df5__item">
+                    <h5><b>Total price</b></h5>
+                </div>
+                <div class="df5__item">
+                    <span id="totalprice2" class="little"></span>
+                </div>
+            </div>
+            <div class="line"></div>
+            <i class="fas fa-check"></i>
+
+        </div>
+
+    </div>
+        
+    <script>
+        document.getElementById('button').addEventListener('click', function() {
+            document.querySelector('.bg-modal').style.display = 'flex'
+        });
+        document.querySelector('.close').addEventListener('click', function() {
+            document.querySelector('.bg-modal').style.display = 'none';
+        });
+        document.getElementById('result').innerHTML = localStorage.getItem('textvalue');
+        document.getElementById('totalprice2').innerHTML = localStorage.getItem('textvalue');
+
+
+
+        window.addEventListener('load', () => {
+            const fnam = localStorage.getItem('sm');
+            document.getElementById('fnm').innerHTML = fnam;
+        })
+        window.addEventListener('load', () => {
+            const lnam = localStorage.getItem('me');
+            document.getElementById('lnm').innerHTML = lnam;
+        })
+        window.addEventListener('load', () => {
+            const tel = localStorage.getItem('tlp');
+            document.getElementById('tphone').innerHTML = tel;
+        })
+        window.addEventListener('load', () => {
+            const noting = localStorage.getItem('nt');
+            document.getElementById('notefor').innerHTML = noting;
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
