@@ -1,5 +1,4 @@
 # POS SYSTEM (Software Engineering Assignment)
-**Team name:** Outlaws 
 **Task 1:** Requirement Elictation 
 **Task 2:** Activity, Sequence and Class Diagram 
 **Task 3:** Architecture design 
