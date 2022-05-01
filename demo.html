@@ -469,3 +469,67 @@
                 enableCheckoutbutton();
             }
         };
+        function enableCheckoutbutton() {
+            const checkoutbutton = document.getElementById('checkoutbutton');
+            checkoutbutton.disabled = true;
+            if (orderidarray.length > 0) {
+                checkoutbutton.disabled = false;
+            }
+            if (orderidarray.length == 0) {
+                const backtofoodtab = document.getElementById('pills-food-tab');
+                const foodtab = new bootstrap.Tab(backtofoodtab);
+
+                foodtab.show();
+            }
+        };
+        ////open a new tab
+        function gotocheckouttab() {
+            const firstabel = document.getElementById('pills-checkout-tab');
+            const firsttab = new bootstrap.Tab(firstabel);
+
+            firsttab.show();
+        };
+        function passValues() {
+            var firstname = document.getElementById('amount').value;
+            localStorage.setItem('textvalue', firstname);
+              
+            const finame = document.getElementById('fn').value;
+            localStorage.setItem('sm', finame);
+
+            const laname = document.getElementById('ln').value;
+            localStorage.setItem('me', laname);
+
+            const tph = document.getElementById('telephonenumber').value;
+            localStorage.setItem('tlp', tph);
+
+            const notes = document.getElementById('floatingTextarea2').value;
+            localStorage.setItem('nt', notes);
+
+            return false;
+        }
+    </script>
+    <!--date-->
+    <script>
+        var today = new Date();
+        var date = today.getDate()+'-'+(today.getMonth() +1)+'-'+today.getFullYear();
+        document.getElementById('date').innerHTML = date;
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+        const checkoutbutton = document.getElementById('checkoutbutton');
+        checkoutbutton.addEventListener('click', () => {
+            modal_container_K.classList.add('show');
+        });
+
+        
+        const closecheckout = document.getElementById('closecheckout');
+        closecheckout.addEventListener('click', () => {
+            modal_container_K.classList.remove('show');
+        });
+    </script>
+</body>
+
+
+
+</html>
