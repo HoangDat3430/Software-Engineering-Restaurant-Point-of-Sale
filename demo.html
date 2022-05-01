@@ -321,3 +321,11 @@
                     </div>`;
             
         }
+        let increase = e => {
+            e.parentNode.childNodes[3].innerHTML++;
+
+        };
+        let decrease = e => {
+            if (e.parentNode.childNodes[3].innerHTML > 1)
+                e.parentNode.childNodes[3].innerHTML--;
+        };
