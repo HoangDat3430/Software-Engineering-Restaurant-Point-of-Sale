@@ -97,7 +97,7 @@ P03 The server must be able to support a maximum of 300 orders one in a day.<br>
 
 #### Use-case diagram for the whole system
 
-<img src="RES_POS_2.0.png" width=auto>
+<img src="materials/RES_POS_2.0.png" width=auto>
 
 ### Task 1.3  Use-case diagram and describe
 | **Name:**               |   Make Payment                                                                                                                        |
@@ -111,17 +111,17 @@ P03 The server must be able to support a maximum of 300 orders one in a day.<br>
 ## Task 2
 ### Task 2.1 Activity Diagram
 
-![](https://i.imgur.com/tYAA2F9.png)
+<img src="materials/ACTIVITY_DIAGRAM.png" width=auto>
 
 ### Task 2.2 Sequence diagram
 
-![](https://i.imgur.com/8lwAGJX.png)
+<img src="materials/SEQUENCE_DIAGRAM.png" width=auto>
 
 
 
 ### Task 2.3 Class diagram
 
-![](https://i.imgur.com/PEcTBOT.png)
+<img src="materials/CLASS_DIAGRAM.png" width=auto>
 
 
 ## Task 3
@@ -155,11 +155,11 @@ SQS are put in or taken out.
 – This strategy places the partition key on the Domain Name. Our entire system is capable of supporting a big number of restaurants while maintaining excellent availability.
 Only the IP from the compute server will be accepted for inbound and outgoing traffic
 
-![](https://i.imgur.com/3cSmaqv.png)
+<img src="materials/MODEL.png" width=auto>
 
 
 ### Task 3.2 An implementation diagram
-![](https://i.imgur.com/9oX3Nfv.png)
+<img src="materials/IMPLEMENTATION_DIAGRAM.png" width=auto>
 
 ## Task 4
 
