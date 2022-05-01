@@ -5,7 +5,7 @@
 **Task 4:** Implementation
 
 ## Members
-- Hoàng Mạnh Đạt (1952313)
+- Hoàng Mạnh Đạt (1852313)
 - Nguyễn Bình Minh (1952846)
 - Phạm Hữu Thiên (1852755)
 - Trần Trung Hiếu (1952684)
