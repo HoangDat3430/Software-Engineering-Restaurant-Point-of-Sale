@@ -8,7 +8,7 @@ the world.
 the website.
 
 - For the two primary sorts of users, there are two sub-domains: ”staff. storeabc.com” <br>
-for employees and ”www. storeabc.com” for customers.
+for employees and ”www. storeabc.com” for customers.<br>
 – Laptops and mobile phones are examples of user devices. Client devices’ browsers
 send queries to the URL and AWS Rout 53, a domain name service redirect, and
 receive responses from AWS CloudFront, a CDN server, which receives and renders
