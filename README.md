@@ -116,7 +116,7 @@ P03 The server must be able to support a maximum of 300 orders one in a day.<br>
 
 ### Task 2.2 Sequence diagram
 
-<img src="materials/SEQUENCE_DIAGRAM.png" 
+<img src="materials/sequential.draw.png" 
 
 
 
