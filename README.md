@@ -52,25 +52,25 @@ G03 The system should be usable from a mobile device, a tablet device or a norma
 G04 The system should be extendable to use in multiple restaurants in the future.<br>
 G05 The current transactions is about 300 orders per day.<br>
 ### CUSTOMER:
-C01 The customers shall be able to engage the menu of restaurants by scanning the QR code placed on their tables or logging in with their own accounts.<br>
-C02 Customers will be able to begin placing an order by picking any of the available items.<br>
-C03 Customers will be able to change the quantity of an item after they have selected it.<br>
-C04 Customers will be able to change the quantities, requests, and removal of products while on the menu page<br>
-C05 The customers shall be able to submit their orders.<br>
-C06 The customers shall be able to go back to the menu anytime to continue picking items.<br>
-C07 The customers shall be alerted via the notification of system in case an item is not available<br>
-C08 Customers will be able to request assistance via the web at any time (for special recommendations, cleaning, etc.).<br>
-C09 The customers shall be able to search for the item on the menu page.<br>
-C10 Customers will be able to select payment options (internet banking, credit card, or cash) before placing orders on the confirmation page.<br>
-C11 If the customers choose for the internet banking method, they shall be able to select their bankcard type then confirm their payment.<br>
-C12 The customers shall be able to send feedback on quality of the foods,attitude of staff ,... right on the website after finishing the meals.<br>
+  C01 The customers shall be able to engage the menu of restaurants by scanning the QR code placed on their tables or logging in with their own accounts.<br>
+  C02 Customers will be able to begin placing an order by picking any of the available items.<br>
+  C03 Customers will be able to change the quantity of an item after they have selected it.<br>
+  C04 Customers will be able to change the quantities, requests, and removal of products while on the menu page<br>
+  C05 The customers shall be able to submit their orders.<br>
+  C06 The customers shall be able to go back to the menu anytime to continue picking items.<br>
+  C07 The customers shall be alerted via the notification of system in case an item is not available<br>
+  C08 Customers will be able to request assistance via the web at any time (for special recommendations, cleaning, etc.).<br>
+  C09 The customers shall be able to search for the item on the menu page.<br>
+  C10 Customers will be able to select payment options (internet banking, credit card, or cash) before placing orders on the confirmation page.<br>
+  C11 If the customers choose for the internet banking method, they shall be able to select their bankcard type then confirm their payment.<br>
+  C12 The customers shall be able to send feedback on quality of the foods,attitude of staff ,... right on the website after finishing the meals.<br>
 ### CLERK:
-K01 The clerks shall be able to log in and log out their own account on their tablets<br>
-K02 If an order is placed, the clerks will be notified via their tablets.<br>
-K03 The clerks shall be alerted if the item ordered from the kitchen is ready.<br>
-K04 The clerks shall be alerted if the item ordered is not available.<br>
-K05 The clerks will be able to use their tablets to record an item that they successfully deliver to the table.<br>
-K06 Clerks who process contact payments (credit cards and cash) will use their tablets to keep track of them.<br>
+  K01 The clerks shall be able to log in and log out their own account on their tablets<br>
+  K02 If an order is placed, the clerks will be notified via their tablets.<br>
+  K03 The clerks shall be alerted if the item ordered from the kitchen is ready.<br>
+  K04 The clerks shall be alerted if the item ordered is not available.<br>
+  K05 The clerks will be able to use their tablets to record an item that they successfully deliver to the table.<br>
+  K06 Clerks who process contact payments (credit cards and cash) will use their tablets to keep track of them.<br>
 ### CHEF: 
 H01 The chef shall be able to confirm an order of customer through the display<br>
 H02 If an item is not available through the display, the chef will be able to inform the consumer.<br>
@@ -79,21 +79,21 @@ H03 Through the display, the chef will be able to signal when a order of custome
 #### Non-functional requirements:
 This part presents the identified non-functional requirements for Restaurant POS 2.0. The subcategories of non-functional requirements given are safety, security and performance<br>
 ### SAFETY:
-S01 When problems occrur ( such as system crash or power failure), the system must restore the previous condition.<br>
-S02 When tablets fail to send messages or when assigned clerks are disconnected from the tablet, the system will flag them.<br>
-S03 The system must be able to display a menu to take orders at all time.<br>
-S04 To monitor the condition of tablet, the system sends periodic 30-second sustaining signals between the tablet and the<br>
-server.<br>
+  S01 When problems occrur ( such as system crash or power failure), the system must restore the previous condition.<br>
+  S02 When tablets fail to send messages or when assigned clerks are disconnected from the tablet, the system will flag them.<br>
+  S03 The system must be able to display a menu to take orders at all time.<br>
+  S04 To monitor the condition of tablet, the system sends periodic 30-second sustaining signals between the tablet and the<br>
+  server.<br>
 ### SECURITY:
-E01 At any given time, a clerk will be limited to logging onto only one tablet.<br>
-E02 The WPA2-PSK password for wireless communication must have at least 80 bits of bit strength and be changed at least once a month.<br>
-E03 A clerk password for tablet login must have at least 64 bits of bit strength and be changed every three months.<br>
-E04 When customers scan QR code to access to the website, they do not need to login.<br>
-E05 Any other users must have username and password to log in.<br>
+  E01 At any given time, a clerk will be limited to logging onto only one tablet.<br>
+  E02 The WPA2-PSK password for wireless communication must have at least 80 bits of bit strength and be changed at least once a month.<br>
+  E03 A clerk password for tablet login must have at least 64 bits of bit strength and be changed every three months.<br>
+  E04 When customers scan QR code to access to the website, they do not need to login.<br>
+  E05 Any other users must have username and password to log in.<br>
 ### PERFORMANCE:
-P01 The server must be able to handle at least an arbitrary number of simultaneous connections.<br>
-P02 The server must be able to process an unlimited number of orders at the same time.<br>
-P03 The server must be able to support a maximum of 300 orders one in a day.<br>
+  P01 The server must be able to handle at least an arbitrary number of simultaneous connections.<br>
+  P02 The server must be able to process an unlimited number of orders at the same time.<br>
+  P03 The server must be able to support a maximum of 300 orders one in a day.<br>
 
 #### Use-case diagram for the whole system
 
