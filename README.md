@@ -3,7 +3,7 @@
 **Task 1:** Requirement Elictation 
 **Task 2:** Activity, Sequence and Class Diagram 
 **Task 3:** Architecture design 
-**Task 4:** Implementation – Sprint 1 
+**Task 4:** Implementation
 
 ## Members
 - Hoàng Mạnh Đạt (1952313)
