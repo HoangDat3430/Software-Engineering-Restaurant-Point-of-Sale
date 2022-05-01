@@ -438,3 +438,18 @@
                 document.getElementById('amount').value = parseFloat(totalcost.toFixed(2));
             }
        };
+        function clearorder() {
+            let orderlist = document.getElementById('orderlist');
+            document.getElementById('amount').value = 0;
+            orderlist.innerHTML = "";
+            orderitemarray.length = 0;
+            orderpricearray.length = 0;
+            orderarray.length = 0;
+            orderidarray.length = 0;
+            arrquantity.length = 0;
+            id = 0;
+            console.log(id);
+            totalitems();
+            costitem();
+            enableCheckoutbutton();
+        }
