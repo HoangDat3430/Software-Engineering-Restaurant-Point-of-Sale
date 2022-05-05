@@ -82,8 +82,7 @@ This part presents the identified non-functional requirements for Restaurant POS
   S01 When problems occrur ( such as system crash or power failure), the system must restore the previous condition.<br>
   S02 When tablets fail to send messages or when assigned clerks are disconnected from the tablet, the system will flag them.<br>
   S03 The system must be able to display a menu to take orders at all time.<br>
-  S04 To monitor the condition of tablet, the system sends periodic 30-second sustaining signals between the tablet and the<br>
-  server.<br>
+  S04 To monitor the condition of tablet, the system sends periodic 30-second sustaining signals between the tablet and the server.<br>
 ### SECURITY:
   E01 At any given time, a clerk will be limited to logging onto only one tablet.<br>
   E02 The WPA2-PSK password for wireless communication must have at least 80 bits of bit strength and be changed at least once a month.<br>
